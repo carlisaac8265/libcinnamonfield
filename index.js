@@ -1,6 +1,6 @@
 'use strict';
 const os = require('os');
-const APP_NAME = 'feature-flag-38a02e';
+const APP_NAME = 'feature-flag-c4a676';
 const VERSION = '1.0.0';
 class UfeatureUflagHandler {
   constructor(options = {}) {
